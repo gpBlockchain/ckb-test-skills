@@ -8,6 +8,8 @@
 
 ```bash
 npm i -g openskills
+openskills install gpBlockchain/ckb-test-skills
+openskills sync 
 ```
 
 ## 可用 Skills
@@ -37,21 +39,16 @@ npm i -g openskills
 
 ```text
 使用 ckb-vm-contract-test-analysis 对 type 合约做测试分析 examples/xudt.c
+
 ```
+*   [xudt OpenSkills 分享链接](https://opncd.ai/share/90bH1Us3)
+
+以项目中的 `examples/commitment-lock.rs ` 为例：
+
+```text
+commitment-lock.rs 使用ckb-vm-contract-test-analysis 做合约测试分析
+
+```
+*   [commitment-lock OpenSkills 分享链接](https://opncd.ai/share/DxsUidbn)
 
 
-**分析产出摘要：**
-
-1.  **逻辑概览**:
-    *   **参数解析**: 识别 Flags 和 Owner 权限。
-    *   **基础逻辑**: 验证代币守恒定律 `Sum(Inputs) >= Sum(Outputs)`。
-    *   **扩展逻辑**: 支持 RCE (Regulation Compliance Extension) 等动态扩展脚本。
-
-2.  **推荐测试场景**:
-    *   **基础功能**: 转账 (Transfer)、合并 (Merge)、拆分 (Split)、销毁 (Burn)、发行 (Mint - 仅限 Owner)。
-    *   **扩展特性**: 验证不同的 Flags 组合及扩展脚本的加载与执行。
-    *   **异常边界**: 测试数据长度不足、整数溢出、哈希不匹配等失败情况。
-
-## 参考资源
-
-*   [OpenSkills 分享链接](https://opncd.ai/share/90bH1Us3)
