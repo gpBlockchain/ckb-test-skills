@@ -41,7 +41,7 @@ Taking `examples/xudt.c` in the project as an example:
 ```text
 使用ckb-vm-contract-test-analysis 对type合约做测试分析 examples/xudt.c
 ```
-*   [xudt OpenSkills Share Link](https://opncd.ai/share/90bH1Us3)
+*   [xudt OpenSkills Share Link](https://opncd.ai/share/zcgcPYsR)
 
 #### Practical Example: commitment-lock Contract Analysis
 
