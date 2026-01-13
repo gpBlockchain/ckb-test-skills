@@ -26,6 +26,7 @@ This Skill focuses on analyzing CKB smart contract code to assist in designing c
 #### Usage
 
 You can directly invoke this Skill to analyze specific contract files.
+> **Note:** Please explicitly specify whether the target contract is a **Lock Script** or a **Type Script**, as the analysis logic and test scenarios differ significantly between them.
 
 **Command Example:**
 
@@ -38,7 +39,7 @@ Use ckb-vm-contract-test-analysis to perform test analysis on type contract <con
 Taking `examples/xudt.c` in the project as an example:
 
 ```text
-Use ckb-vm-contract-test-analysis to perform test analysis on type contract examples/xudt.c
+使用ckb-vm-contract-test-analysis 对type合约做测试分析 examples/xudt.c
 ```
 *   [xudt OpenSkills Share Link](https://opncd.ai/share/90bH1Us3)
 
@@ -47,6 +48,6 @@ Use ckb-vm-contract-test-analysis to perform test analysis on type contract exam
 Taking `examples/commitment-lock.rs` in the project as an example:
 
 ```text
-Use ckb-vm-contract-test-analysis to perform test analysis on commitment-lock.rs
+使用ckb-vm-contract-test-analysis 对lock合约做测试分析 examples/commitment-lock.rs
 ```
 *   [commitment-lock OpenSkills Share Link](https://opncd.ai/share/DxsUidbn)
