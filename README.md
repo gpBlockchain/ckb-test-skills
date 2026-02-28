@@ -51,3 +51,18 @@ Taking `examples/commitment-lock.rs` in the project as an example:
 使用ckb-vm-contract-test-analysis 对lock合约做测试分析 examples/commitment-lock.rs
 ```
 *   [commitment-lock OpenSkills Share Link](https://opncd.ai/share/DxsUidbn)
+
+### security-audit
+
+This Skill provides an AI-driven security audit framework applicable to any programming language and project type.
+
+**Key Features:**
+*   **Phased Execution**: Structured workflow across 4 phases — reconnaissance, deep audit, documentation updates, and final report generation.
+*   **Multi-Dimension Analysis**: Covers 11 audit dimensions including input validation, cryptography, authentication, business logic, memory safety, smart contract specifics, and more.
+*   **TODO-Driven Tracking**: Uses a centralized TODO document as the single source of truth for audit progress, supporting cross-session continuity.
+
+#### Usage
+
+```text
+Use security-audit to perform a security audit on <project_path>
+```

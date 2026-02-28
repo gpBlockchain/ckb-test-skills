@@ -1,3 +1,7 @@
+---
+name: security-audit
+description: AI-driven security audit skill for any software project. Use this skill when performing security audits to systematically analyze code for vulnerabilities across multiple dimensions including input validation, cryptography, authentication, business logic, memory safety, and more. Supports phased execution with TODO document tracking.
+---
 # Skill: AI-Driven Security Audit
 
 > 通用安全审计能力，适用于任意语言、任意类型的软件项目。

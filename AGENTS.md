@@ -27,6 +27,12 @@ Usage notes:
 <location>project</location>
 </skill>
 
+<skill>
+<name>security-audit</name>
+<description>AI-driven security audit skill for any software project. Use this skill when performing security audits to systematically analyze code for vulnerabilities across multiple dimensions including input validation, cryptography, authentication, business logic, memory safety, and more. Supports phased execution with TODO document tracking.</description>
+<location>project</location>
+</skill>
+
 </available_skills>
 <!-- SKILLS_TABLE_END -->
 
