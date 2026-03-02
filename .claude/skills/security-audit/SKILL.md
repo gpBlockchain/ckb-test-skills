@@ -278,11 +278,17 @@ description: AI-driven security audit skill for any software project. Use this s
   □ 内存泄漏
   □ 资源耗尽 (OOM/栈溢出/gas 耗尽)
   □ unsafe 代码块的安全不变量
+
+CKB 合约排除项:
+  ✗ 内存对齐 — CKB-VM 原生支持非对齐内存访问（unaligned memory access），
+    因此在审计 CKB 合约时，无需检查内存对齐问题。指针强制转换访问
+    非对齐地址（如 *(uint32_t*)(ptr + offset)）在 CKB-VM 上是安全的，
+    不会触发对齐异常或未定义行为。
 ```
 
 ### DIM-CONTRACT: 智能合约特定
 ```
-适用: Solidity/Move/CosmWasm 等智能合约
+适用: Solidity/Move/CosmWasm/CKB 等智能合约
 检查点:
   □ 重入攻击
   □ 闪电贷/价格操纵
@@ -293,6 +299,9 @@ description: AI-driven security audit skill for any software project. Use this s
   □ 精度损失与舍入方向
   □ 余额/总量一致性
   □ selfdestruct / delegatecall 滥用
+
+CKB 合约排除项:
+  ✗ 内存对齐 — CKB-VM 原生支持非对齐内存访问，无需审计内存对齐问题
 ```
 
 ### DIM-DEPS: 依赖安全
